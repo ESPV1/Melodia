@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/assets/vinil-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/b925ab622a.js" crossorigin="anonymous"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-title: "Roboto Slab", sans-serif;
+        --color-darkpurple: #161032;
+        --color-icterine: #FAFF81;
+        --color-mikadoyellow: #FFC53A;
+        --color-cocosbrown: #E06D06;
+        --color-tigereye: #B26700;
+        --container-8xl: 90rem;
+      }
+    </style>
+    <title>Melodia</title>
+</head>
+<body>
+     <section class="relative bg-[url('src/assets/vinil.jpg')] min-h-screen bg-center bg-cover">
+      <!-- Span criado somente para 'escurecer' o fundo -->
+      <span class="absolute bg-black/50 inset-0"></span>
+      <header class="relative z-10 bg-darkpurple min-h-18 content-center px-5 font-bold text-lg">
+        <nav class="flex justify-between text-white items-center">
+          <div class="flex items-center gap-3 font-title text-white">
+            <img class="w-15 p-1" src="src/assets/vinil-icon.png" alt="Logo">
+            <a class="hover:text-icterine transition-colors duration-200 cursor-pointer" href="index.html">Melodia</a>
+          </div>
+          <ul class="flex gap-10 text-center">
+            <!-- <li><a href="#" class="hover:text-icterine transition-colors duration-200">Home</a></li> -->
+            <li><a href="#avaliacao" class="hover:text-icterine transition-colors duration-200">Avaliações</a></li>
+            <li><a href="#destaques" class="hover:text-icterine transition-colors duration-200">Destaques</a></li>
+            <li><a href="#contato" class="hover:text-icterine transition-colors duration-200">Contato</a></li>
+          </ul>
+          <button class="border-2 border-icterine text-icterine py-2 px-4 rounded-md hover:bg-icterine transition-colors duration-300 hover:text-black cursor-pointer">
+            <i class="fa-solid fa-user"></i>
+            Login
+          </button>
+        </nav>
+      </header>
+      <div class="relative z-10  min-h-screen content-center text-center space-y-5">
+        <h1 class="text-7xl px-10 min-w-1/2 font-bold font-title text-white">Melodia: Sua Música, Sua Forma</h1>
+        <button class="bg-cocosbrown text-white p-5 rounded-xl shadow-xl shadow-black/50 text-xl font-bold hover:bg-amber-700 transition-colors duration-200 cursor-pointer content-center">
+          <i class="fa-solid fa-music"></i>
+          Ouvir Agora
+        </button>
+      </div>
+     </section>
+
+     <main class="flex flex-col gap-10 mt-8 mb-8">
+        <!-- Destaques do App (funcionalidades) -->
+        <section class="flex justify-center gap-10" id="destaques">
+          <div class="group flex flex-col gap-2 w-1/5 bg-gray-10 p-5 rounded-md transform hover:scale-105 transition-all duration-400">
+            <i class="fa-solid fa-guitar text-5xl text-cocosbrown transition-all duration-400 group-hover:text-6xl"></i>
+            <h3 class="font-title font-bold text-2xl">Aprenda e Toque</h3>
+            <p>Acesse milhares de cifras, tablaturas e videoaulas para todos os níveis. Seja para aprender seus primeiros acordes ou aprimorar solos complexos, aqui você encontra as ferramentas para evoluir.</p>
+          </div>
+    
+            <div class="group flex flex-col gap-2 w-1/5 bg-gray-10 p-5 rounded-md transform hover:scale-110 transition-all duration-400">
+              <i class="fa-solid fa-book-open text-5xl text-cocosbrown transition-all duration-400 group-hover:text-6xl""></i>
+              <h3 class="font-title font-bold text-2xl">Explore um Acervo Completo</h3>
+              <p>Navegue por uma biblioteca com milhões de músicas, dos clássicos atemporais aos lançamentos mais recentes. Descubra novos artistas, álbuns e playlists selecionadas para cada momento do seu dia.</p>
+          </div>
+    
+            <div class="group flex flex-col gap-2 w-1/5 bg-gray-10 p-5 rounded-md transform hover:scale-110 transition-all duration-400">
+              <i class="fa-solid fa-shapes text-5xl text-cocosbrown transition-all duration-400 group-hover:text-6xl""></i>
+              <h3 class="font-title font-bold text-2xl">Conecte-se e Compartilhe</h3>
+              <p>Faça parte de uma comunidade vibrante e apaixonada por música. Crie e compartilhe playlists, siga outros usuários e troque recomendações para expandir seus horizontes musicais.</p>
+          </div>
+        </section>
+    
+        <!-- Informações do app -->
+        <section class="flex gap-8 max-w-7xl mx-auto mt-5 bg-gray-200 rounded-xl p-5 justify-center shadow-lg shadow-black/40">
+          <div class="bg-[url('src/assets/artist.jpg')] border-2 border-gray-600 shadow-md shadow-black/40 rounded-full p-40 bg-center bg-cover" alt="Artista"></div>
+
+          <div class="py-5">
+              <h2 class="font-title text-4xl font-bold text-darkpurple/90 tracking-tight">
+                Uma plataforma que conecta você à sua paixão
+              </h2>
+              <p class="font-title mt-4 text-lg text-gray-600">
+                Somos mais do que um app, somos uma comunidade global unida pelo poder da música. <span class="font-bold text-darkpurple/90"><br>Nossos números refletem essa conexão.</span>
+              </p>
+              <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                  <i class="fa-solid fa-music text-tigereye text-2xl"></i>
+                  <span class="font-title font-bold text-tigereye text-3xl">+10 Milhões</span>
+                  <h3 class="text-xl font-semibold text-gray-800">Músicas no Catálogo</h3>
+                  <!-- <p>Um universo de cifras, faixas e tablaturas crescendo a cada dia.</p> -->
+                </div>
+                
+                <div>
+                  <i class="fa-solid fa-rocket text-tigereye text-2xl"></i>
+                  <span class="font-title font-bold text-tigereye text-3xl">+20 Conexões</span>
+                  <h3 class="text-xl font-semibold text-gray-800">Conectadas no aplicativo</h3>
+                </div>
+                
+                <div>
+                  <i class="fa-solid fa-users-line text-tigereye text-2xl"></i>
+                  <span class="font-title font-bold text-tigereye text-3xl">+500 Mil</span>
+                  <h3 class="text-xl font-semibold text-gray-800">Membros na comunidade</h3>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="flex flex-col max-w-8xl mx-auto gap-8" id="avaliacao">
+          <h1 class="font-title font-bold text-4xl text-center">Avaliações dos usuários</h1>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+            
+            <div class="bg-gray-200 p-4 space-y-1 rounded-md shadow-xl shadow-black/40">
+              <h2 class="font-title font-bold text-2xl">Lucas M.</h2>
+              <div class="flex gap-2">
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star-half-stroke text-mikadoyellow text-xl"></i>
+              </div>
+              <p class="text-justify">Finalmente encontrei um lugar com todas as cifras que eu preciso! A qualidade das tablaturas é excelente e os vídeos ajudam muito a pegar o ritmo certo. A interface é limpa e fácil de usar. Só gostaria que tivesse um modo offline para praticar quando estou sem internet, mas de resto, é perfeito!</p>
+            </div>
+
+             <div class="bg-gray-200 p-4 space-y-1 rounded-md shadow-xl shadow-black/40">
+              <h2 class="font-title font-bold text-2xl">Ana Beatriz</h2>
+              <div class="flex gap-2">
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+              </div>
+              <p class="text-justify">Esse app é incrível! A melhor parte é a comunidade. Adoro criar playlists colaborativas com meus amigos e descobrir novas bandas que os algoritmos recomendam. Já encontrei tanta música boa por aqui que nunca teria achado em outro lugar. Essencial para quem é apaixonado por música de verdade. Recomendo 100%!</p>
+            </div>
+
+             <div class="bg-gray-200 p-4 space-y-1 rounded-md shadow-xl shadow-black/40">
+              <h2 class="font-title font-bold text-2xl">Carlos S.</h2>
+              <div class="flex gap-2">
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
+                <i class="fa solid fa-star text-mikadoyellow text-xl"></i>
+                <!-- <i class="fa-solid fa-star-half-stroke text-mikadoyellow text-xl"></i> -->
+                <i class="fa-regular fa-star text-mikadoyellow text-xl"></i>
+              </div>
+              <p class="text-justify">A variedade de ferramentas para composição é muito boa e a integração com o SoundCloud funciona bem para compartilhar minhas demos. O acervo de músicas também é gigante. No entanto, o aplicativo para desktop às vezes fica um pouco lento e trava ao carregar bibliotecas muito grandes. Tem muito potencial, mas precisa de otimização.</p>
+            </div>
+          </div>
+        </section>
+
+         <!-- Formulário de Contato -->
+        <section id="contato">
+          <h1 class="font-title font-bold text-4xl text-center mb-8">Entre em Contato</h1>
+          <form class="flex flex-col p-10 max-w-3xl mx-auto bg-gray-300 rounded-md shadow-xl shadow-black/40">
+            <label class="text-black font-bold text-xl" for="fullname">Nome Completo:</label>
+            <input class="bg-gray-50 text-black border-0 mb-5 px-2 py-2 rounded-md focus:ring-4 focus:border-2 focus:border-blue-400 transition-colors duration-200" type="text" id="txtfullname" name="txtfullname" placeholder="Nome completo">
+        
+
+            <label class="text-black font-bold text-xl" for="email">Email:</label>
+            <input class="bg-gray-50 text-black border-0 mb-5 px-2 py-2 rounded-md focus:ring-4 focus:border-2 focus:border-blue-400 transition-colors duration-200" type="text" id="txtemail" name="txtemail" placeholder="exemplo@email.com">
+            
+            <label class="text-black font-bold text-xl" for="content">Conteúdo:</label>
+            <textarea class="bg-gray-50 text-black border-0 mb-5 p-2 h-30 rounded-md focus:ring-4 focus:border-2 focus:border-blue-400 transition-colors duration-200" name="txtareacontent" id="txtareacontent" placeholder="Informe o conteúdo do contato"></textarea>
+
+            <input class="bg-mikadoyellow w-fit py-3 px-5 rounded-md shadow-md font-bold mx-auto shadow-black/40 cursor-pointer transition duration-300 hover:bg-amber-500" type="submit" value="Enviar contato">
+          </form>
+        </section>
+     </main>
+
+     <footer>
+
+     </footer>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
