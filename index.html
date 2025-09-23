@@ -12,7 +12,7 @@
 </head>
 <body>
     <main class="flex flex-col mb-30">
-        <section class=" flex flex-col gap-10 m-auto max-w-5xl py-5 px-10 mb-30">
+        <section class=" flex flex-col gap-12 m-auto max-w-5xl py-5 px-10 mb-30">
             <h1 class="font-title font-bold text-4xl text-center">Por que utilizar Melodia?</h1>
             <article class="grid grid-cols-2 gap-10">
                 <article class="flex flex-col gap-2 items-center">
@@ -41,7 +41,7 @@
                 </article>
             </article>
         </section>
-        <section class="flex flex-col max-w-5xl mx-auto gap-8" id="avaliacao">
+        <section class="flex flex-col max-w-7xl mx-auto gap-8" id="avaliacao">
             <h1 class="font-title font-bold text-4xl text-center">Avaliações dos usuários</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
 
@@ -82,7 +82,6 @@
                         <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
                         <i class="fa-solid fa-star text-mikadoyellow text-xl"></i>
                         <i class="fa solid fa-star text-mikadoyellow text-xl"></i>
-                        <!-- <i class="fa-solid fa-star-half-stroke text-mikadoyellow text-xl"></i> -->
                         <i class="fa-regular fa-star text-mikadoyellow text-xl"></i>
                     </div>
                     <p class="text-justify">A variedade de ferramentas para composição é muito boa e a integração com o
@@ -93,32 +92,33 @@
             </div>
         </section>
     </main>
-    <form class="flex flex-col gap-4 max-w-xl m-auto border px-10 py-5">
+    <h1 class="font-title font-bold text-4xl text-center mb-10">Entre em Contato</h1>
+    <form class="flex flex-col gap-4 max-w-xl m-auto border px-10 py-5 mb-10">
         <div class="flex flex-col">
-            <label for="nome">Nome</label>
-            <input class="border rounded user-valid:border-green-500 user-invalid:border-red-500" type="text" id="nome"
+            <label class="text-lg" for="nome">Nome</label>
+            <input class="border-2 rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="text" id="nome"
                 name="nome" required>
         </div>
         <div class="flex flex-col">
-            <label for="sobrenome">Sobrenome</label>
-            <input class="border rounded user-valid:border-green-500 user-invalid:border-red-500" type="text"
+            <label class="text-lg" for="sobrenome">Sobrenome</label>
+            <input class="border-2 rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="text"
                 id="sobrenome" name="sobrenome" required>
         </div>
         <div class="flex flex-col">
-            <label for="email">E-mail</label>
-            <input class="border rounded user-valid:border-green-500 user-invalid:border-red-500" type="email"
+            <label class="text-lg" for="email">E-mail</label>
+            <input class="border-2 rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="email"
                 id="email" name="email" required>
         </div>
         <div class="flex flex-col">
-            <label for="assunto">Assunto</label>
-            <input class="border rounded user-valid:border-green-500 user-invalid:border-red-500" type="text"
+            <label class="text-lg" for="assunto">Assunto</label>
+            <input class="border-2 rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="text"
                 id="assunto" name="assunto" required>
         </div>
         <div class="flex flex-col">
-            <label for="mensagem">Mensagem</label>
-            <textarea class="border rounded" id="mensagem" name="mensagem" minlength="10" rows="4" required></textarea>
+            <label class="text-lg" for="mensagem">Mensagem</label>
+            <textarea class="border-2 rounded" id="mensagem" name="mensagem" minlength="10" rows="4" required></textarea>
         </div>
-        <button class="border rounded w-fit m-auto px-5 py-2 cursor-pointer" type="submit">Enviar</button>
+        <button class="border-2 rounded w-fit m-auto px-5 py-2 cursor-pointer text-lg" type="submit">Enviar</button>
     </form>
 
     <footer class="bg-white/10 backdrop-blur text-white w-full">
