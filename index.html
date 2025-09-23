@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Melodia</title>
 </head>
 <body>
-    
+    <form class="flex flex-col gap-4 w-xl m-auto border">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div>
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto">
+        </div>
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
