@@ -6,6 +6,7 @@ body {
     color: #FFFFFF;
 }
 
+/* estilização da scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -29,6 +30,7 @@ body {
   background: rgba(255, 255, 255, 0.719);
 }
 
+/* estilo vidro */
 .glass-container {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
@@ -38,6 +40,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.308);
 }
 
+/* padronização da section */
 section {
     display: flex;
     flex-direction: column;
@@ -48,6 +51,7 @@ section {
     border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 
+/* estilos dos inputs e do botão */
 .form-input {
     border-color: rgba(255, 255, 255, 0.527);
     padding: 5px 2%;
@@ -92,4 +96,32 @@ section {
 .form-button:hover::after {
     background: none;
     color: white;
+}
+
+/* estilos para seção de funcionalidades */
+#funcionalidades .glass-container {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+#funcionalidades .glass-container:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* gradientes personalizados para os ícones */
+.icon-gradient-1 {
+    background: linear-gradient(135deg, #fbbf24, #f97316);
+}
+
+.icon-gradient-2 {
+    background: linear-gradient(135deg, #34d399, #3b82f6);
+}
+
+.icon-gradient-3 {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+.icon-gradient-4 {
+    background: linear-gradient(135deg, #60a5fa, #06b6d4);
 }
