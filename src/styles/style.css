@@ -1,6 +1,72 @@
-body{
-    background: #2A7B9B;
-    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 0.9) 100%);
-    font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 0.9) 100%);
+    font-family: MuseoModerno, Poppins, sans-serif;
     color: #FFFFFF;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.308);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.form-input {
+    border-color: rgba(255, 255, 255, 0.527);
+    padding: 5px 2%;
+    outline: none;
+}
+
+.form-button {
+    border-color: rgba(255, 255, 255, 0.527);
+    padding: 1% 8%;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: rgba(255, 255, 255, 0.877);
+    transition: .3s;
+    color: transparent;
+    position: relative;
+}
+
+.form-button::after {
+    content: "ENVIAR";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: linear-gradient(90deg, #65C892, #70CE90);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form-button:hover {
+    color: white;
+    background: transparent;
+    border-color: white;
+}
+
+.form-button:hover::after {
+    background: none;
+    color: white;
 }
