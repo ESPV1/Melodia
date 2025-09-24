@@ -95,37 +95,43 @@
                 </div>
             </div>
         </section>
+        <section class="gap-10 py-10">
+            <h1 class="font-title font-bold text-4xl text-center">Entre em Contato</h1>
+            <form class="flex flex-col gap-8 min-w-xl border px-10 py-7 glass-container">
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold" for="nome">Nome</label>
+                    <input
+                        class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500"
+                        type="text" id="nome" name="nome" required>
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold" for="sobrenome">Sobrenome</label>
+                    <input
+                        class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500"
+                        type="text" id="sobrenome" name="sobrenome" required>
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold" for="email">E-mail</label>
+                    <input
+                        class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500"
+                        type="email" id="email" name="email" required>
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold" for="assunto">Assunto</label>
+                    <input
+                        class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500"
+                        type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold" for="mensagem">Mensagem</label>
+                    <textarea class="border-2 form-input rounded" id="mensagem" name="mensagem" minlength="10" rows="4"
+                        required></textarea>
+                </div>
+                <button class="border-2 form-button rounded w-fit m-auto px-5 py-2 cursor-pointer text-lg"
+                    type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
-    <h1 class="font-title font-bold text-4xl text-center mb-10">Entre em Contato</h1>
-    <form class="flex flex-col gap-8 max-w-xl m-auto border px-10 py-7 mb-10 glass-container">
-        <div class="flex flex-col">
-            <label class="text-lg font-semibold" for="nome">Nome</label>
-            <input class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="text"
-                id="nome" name="nome" required>
-        </div>
-        <div class="flex flex-col">
-            <label class="text-lg font-semibold" for="sobrenome">Sobrenome</label>
-            <input class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="text"
-                id="sobrenome" name="sobrenome" required>
-        </div>
-        <div class="flex flex-col">
-            <label class="text-lg font-semibold" for="email">E-mail</label>
-            <input class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="email"
-                id="email" name="email" required>
-        </div>
-        <div class="flex flex-col">
-            <label class="text-lg font-semibold" for="assunto">Assunto</label>
-            <input class="border-2 form-input rounded user-valid:border-2-green-500 user-invalid:border-2-red-500" type="text"
-                id="assunto" name="assunto" required>
-        </div>
-        <div class="flex flex-col">
-            <label class="text-lg font-semibold" for="mensagem">Mensagem</label>
-            <textarea class="border-2 form-input rounded" id="mensagem" name="mensagem" minlength="10" rows="4"
-                required></textarea>
-        </div>
-        <button class="border-2 form-button rounded w-fit m-auto px-5 py-2 cursor-pointer text-lg" type="submit">Enviar</button>
-    </form>
-
     <footer class="bg-white/10 backdrop-blur text-white w-full">
         <div class="w-full px-8 py-8 border-t border-white/20">
             <div class="flex flex-col items-center gap-4 text-center">
