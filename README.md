@@ -4,10 +4,20 @@
 ## 🎯 Objetivo
 Desenvolver uma interface responsiva de um aplicativo de música, utilizando HTML, CSS e Tailwind.​
 
-## 👀 Como acessar o Projeto
-Para que o projeto seja acessado, use o link para o Github Pages(aqui) ou clone o repositorio.
+## 🎵 Features
+- Escutar musica no navegador(Clique em Ouvir Agora!)
+- Hero section
+- Apresentação
+- Funcionalidades
+- Depoimentos
+- Formulario de Contato
+- Rodapé
 
-## 🧰Tecnologias Utilizadas
+
+## 👀 Como acessar o Projeto
+Para que o projeto seja acessado, use o link para o Github Pages [aqui](https://espv1.github.io/Melodia/) ou clone o repo.
+
+## 🧰 Tecnologias Utilizadas
 - Linguagem de marcação: HTML5
 - Linguagem de estilo: CSS3
 - Framework de estilização: Tailwind CSS
